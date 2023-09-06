@@ -187,7 +187,7 @@ FatJar并不是一个标准的jar包结构，只有org.springframework.boot才�
 ## SpringBoot启动加载类流程
 
 刚才提到的org.springframework.boot.loader.JarLauncher，就是SpringBoot真正的启动主函数，那跟本地写的main函数类(假设为WebApplication)有什么区别呢？
-普通的本地main函数，没有嵌套的Jar，是由AppClassLoader直接加载启动，而SpringBoot则是字节写了一套类加载器LaunchedURLClassLoader。
+普通的本地main函数，没有嵌套的Jar，是由AppClassLoader直接加载启动，而SpringBoot则是自己写了一套类加载器LaunchedURLClassLoader。
 
 <br>
 
