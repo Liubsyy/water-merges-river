@@ -137,7 +137,7 @@ URLClassLoader符合双亲委托机制，重写了findClass方法来查找Class�
     }
 ```
 
-里面是从Resource res = ucp.getResource(path, false);获取到资源类的，ucp就是上文的就是URLClassPath。
+里面是从Resource res = ucp.getResource(path, false);获取到资源类的，ucp就是上文的URLClassPath。
 <br>
 <br>
 
