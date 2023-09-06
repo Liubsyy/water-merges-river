@@ -218,7 +218,7 @@ Launcher.launch进入可以看到创建了一个LaunchedURLClassLoader，由Laun
     }
 ```
 
-然后在this.launch(args, launchClass, classLoader);里面使用LaunchedURLClassLoader调用自己写的主函数WebApplication
+然后在this.launch(args, launchClass, classLoader)里面使用LaunchedURLClassLoader调用自己写的主函数WebApplication
 
 ```java
 public class MainMethodRunner {
@@ -240,7 +240,7 @@ public class MainMethodRunner {
 
 ## LaunchedURLClassLoader
 
-LaunchedURLClassLoader作为SpringBoot加载FatJar的主要类加载器，继承了URLClassLoader，重写了loadClass方法，但是本身看不到多少核心的逻辑。
+LaunchedURLClassLoader作为SpringBoot加载FatJar的主要类加载器，继承了URLClassLoader，重写了loadClass方法，但是这个类看不到多少核心的逻辑。
 ```java
 	@Override
 	protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
