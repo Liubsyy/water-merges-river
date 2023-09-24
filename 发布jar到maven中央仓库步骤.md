@@ -256,8 +256,8 @@ gpg --keyserver hkp://keyserver.ubuntu.com:11371 --send-keys 公钥
 ```
 
 ## 5. 发布jar包
-用maven插件的的deploy发布，在https://s01.oss.sonatype.org/用gira账号登录，在Staging Repository可以看到上传的jar
+用maven插件的的deploy发布，在[https://s01.oss.sonatype.org/](https://s01.oss.sonatype.org/)用gira账号登录，在Staging Repository可以看到上传的jar
 
 ## 6.同步中央仓库
-点击Close，如果检测没有问题再点Release，就可以同步到中央仓库了，几个小时后https://repo1.maven.org/maven2/就能看到了，隔天中央仓库就能搜到了。
+点击Close，如果检测没有问题再点Release，就可以同步到中央仓库了，半小时后[https://repo1.maven.org/maven2/](https://repo1.maven.org/maven2/)就能看到了，四个小时后[https://search.maven.org](https://search.maven.org)可搜到。
 
