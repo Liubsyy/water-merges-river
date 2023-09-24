@@ -11,7 +11,7 @@ maven仓库并不支持直接发布，需要第三方maven仓库发布，这里�
 <br>
 
 - Issue Type选New Project
-- Group Id可挂载公司域名，也可挂载github，即io.github.liusyy，提交后管理员会有评论让你在github建立一个空项目
+- Group Id可挂载公司域名，也可挂载github，如io.github.liusyy，提交后管理员会有评论让你在github建立一个空项目
 
 ## 3. 安装并配置GPG
 需要GPG签名的jar包才能推送,所以用GPG<br>
