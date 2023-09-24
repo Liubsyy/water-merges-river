@@ -35,7 +35,7 @@ gpg --keyserver hkp://keyserver.ubuntu.com:11371 --send-keys 公钥ID 将公钥�
 gpg --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 公钥ID 查询公钥是否发布成功
 ```
 
-## 4.配置maven的setting.xml
+## 4.配置maven的settings.xml
 账号和密码是第1步申请的账号和密码
 ```
 <servers>
