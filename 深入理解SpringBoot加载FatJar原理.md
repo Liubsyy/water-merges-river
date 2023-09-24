@@ -10,7 +10,7 @@
 
 双亲委托指的是加载一个类的时候，先由父类加载器去加载，如果父类加载器在加载的目录加载不到，再由子加载器加载，这样做的目的是保证同一个类只加载一次。
 
-![](ParentDelegation.png)
+![](img/ParentDelegation.png)
 
 
 - BootStrap Classloader : 启动类加载器，主要加载核心的类库
@@ -143,7 +143,7 @@ URLClassLoader符合双亲委托机制，重写了findClass方法来查找Class�
 
 进去 ucp.getResource 方法，可以看到getResource的实现细节，就是我上面说的URL的加载
 
-![](getResource.png)
+![](img/getResource.png)
 
 
 # SpringBoot加载FatJar的原理
@@ -152,7 +152,7 @@ URLClassLoader符合双亲委托机制，重写了findClass方法来查找Class�
 
 解压一个SpringBoot项目的的jar包，可以看到FatJar结构
 
-![](fatjar.png)
+![](img/fatjar.png)
 
 **BOOT-INF** 是工程打包的文件，BOOT-INF/classes存放的是工程的代码和配置文件，BOOT-INF/lib存放的是依赖的嵌套jar包(即jar in jar)。
 <br>  
@@ -235,7 +235,7 @@ public class MainMethodRunner {
 这里反射调用自己写的主函数WebApplication的main函数，这样就完成了一套加载的流程。
 
 完整的流程链路如图所示：
-![](startload.png)
+![](img/startload.png)
 
 
 ## LaunchedURLClassLoader
@@ -397,7 +397,7 @@ jar in jar 的路径大概长这样：
  
 前面已经说了LaunchedURLClassLoader继承了URLClassLoader，根据URL返回的字节流，就可以根据ClassName获取到Resource，
 以下是URLClassLoader.getResource方法
-![](getResource.png)
+![](img/getResource.png)
 
 
 而这个Resource，就可以defineClass，即定义一个类
