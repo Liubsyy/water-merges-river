@@ -23,7 +23,16 @@ gpg --gen-key
 ```
 上传公钥
 ```
-gpg --keyserver hkp://keyserver.ubuntu.com:11371 --send-keys 公钥
+gpg --keyserver hkp://keyserver.ubuntu.com:11371 --send-keys 公钥ID
+```
+
+附GPG常用命令
+```
+gpg --version 检查安装成功没
+gpg --gen-key 生成密钥对
+gpg --list-keys 查看公钥
+gpg --keyserver hkp://keyserver.ubuntu.com:11371 --send-keys 公钥ID 将公钥发布到 PGP 密钥服务器
+gpg --keyserver hkp://keyserver.ubuntu.com:11371 --recv-keys 公钥ID 查询公钥是否发布成功
 ```
 
 ## 4.配置maven的setting.xml
@@ -39,7 +48,7 @@ gpg --keyserver hkp://keyserver.ubuntu.com:11371 --send-keys 公钥
 ```
 
 ## 5.配置maven的pom.xml
-参考例子，snapshotRepository的id和第4步保持一致
+必须包括name、description、url、licenses、developers、scm 等基本信息, snapshotRepository的id和第4步保持一致，参考例子
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -256,7 +265,7 @@ gpg --keyserver hkp://keyserver.ubuntu.com:11371 --send-keys 公钥
 ```
 
 ## 5. 发布jar包
-用maven插件的的deploy发布，在[https://s01.oss.sonatype.org/](https://s01.oss.sonatype.org/)用gira账号登录，在Staging Repository可以看到上传的jar
+用maven插件的的deploy发布，会让你输入GPG的密码，成功后在[https://s01.oss.sonatype.org/](https://s01.oss.sonatype.org/)用gira账号登录，在Staging Repository可以看到上传的jar
 
 ## 6.同步中央仓库
 点击Close，如果检测没有问题再点Release，就可以同步到中央仓库了，半小时后[https://repo1.maven.org/maven2/](https://repo1.maven.org/maven2/)就能看到了，四个小时后[https://search.maven.org](https://search.maven.org)可搜到。
