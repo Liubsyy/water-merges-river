@@ -32,7 +32,7 @@
 非静态字段是先弹出显示当前类的所有对象实例的框，选择具体的对象后即可获取该对象的字段值。
 
 ## 安装教程
-详见[https://github.com/Liubsyy/HotSecondsIDEA/blob/master/install/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.md](https://github.com/Liubsyy/HotSecondsIDEA/blob/master/install/%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3.md)
+详见[https://github.com/Liubsyy/HotSecondsIDEA](https://github.com/Liubsyy/HotSecondsIDEA)
 
 
 
