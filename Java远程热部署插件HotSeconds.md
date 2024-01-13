@@ -9,13 +9,17 @@
 
 下面演示一个新增SpringMVC字段和方法的热部署
 
+![](https://github.com/Liubsyy/HotSecondsIDEA/blob/master/img/gif/springmvc1.gif)
+
 
 ### 2.热部署资源文件
 下面演示一个热部署MyBatis的xml文件，也是右键直接热部署生效
+![](https://github.com/Liubsyy/HotSecondsIDEA/blob/master/img/gif/mybatis1.gif)
 
 
 ### 3.批量热更新修改的文件
 修改了多个文件的情况下，直接打开热部署面板，可将修改过的文件热部署到服务器，支持按文件修改时间戳热部署，也可以将版本控制下(Git/SVN等)未提交的文件热部署
+![](https://github.com/Liubsyy/HotSecondsIDEA/blob/master/img/gif/batchhot.gif)
 
 
 ### 4.执行远程函数
