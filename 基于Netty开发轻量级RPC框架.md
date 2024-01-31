@@ -14,7 +14,7 @@
 ### 通信框架使用
 高性能异步非阻塞框架非Netty不可了，客户端和服务端基于Netty开发可事半功倍。
 
-但是Netty打包完都需要20M左右，所以除了client和server端外，再开发一个client-mini模块，这个模块是client端基于nio开发的，性能虽然不如netty但是没有任何依赖，打包下来仅20kb。
+但是基于Netty再加上zk连接和各种工具打包完都需要20M左右，所以除了client和server端外，再开发一个client-mini模块，这个模块是client端基于nio开发的，性能虽然不如netty但是没有任何依赖，打包下来仅20kb。
 
 ### 服务注册和发现
 注册中心选择zookeeper作为服务注册和服务发现，当然如果只用单点模式的话其实是不需要注册中心的，所以zookeeper是可选组件。
