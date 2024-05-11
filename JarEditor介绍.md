@@ -3,8 +3,6 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 我翻遍了IDEA插件市场并没有找到合适的直接编辑jar的插件，于是我打算简单花点时间点写一个这样的插件，可以实现无需解压直接编辑jar内的文件。
 
-<br>
-此插件JarEditor也是我简单的花了一两个晚上做的，以备需要的时候使用，感兴趣的朋友可以去试试，不感兴趣的朋友也别吹毛求疵，毕竟也不是唯一的方案。
 
 ## 功能介绍
 首先IDEA可以反编译jar，在jar内的class是可以直接打开看到反编译代码的，外部文件可以通过File->Project Structure->Libraries添加依赖然后反编译jar。
@@ -20,7 +18,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 下面是一个完整的演示流程例子：
 
-<img src="./img/JarEditor_example.gif" width="720" height="480" />
+<img src="./img/JarEditor_example.gif" width="800" height="480" />
 
 
 修改jar包内的资源文件也是支持的，流程和class文件是一样的，也是修改完要保存，然后再Build Jar即可。
@@ -31,5 +29,10 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 - 编译java的时候依赖的classpath就是工程项目的依赖，如果依赖包找不到可以添加依赖
 - Save/Compile会将修改的文件保存到jar包所在目录的jar_edit子目录下，Build Jar会把会jar_edit目录的文件增量写入jar，最后再删除这个目录
   
+## 总结
+此插件JarEditor第一版也是我简单的花了一两个晚上做的，以备需要的时候使用，感兴趣的朋友可以去试试，不感兴趣的朋友也别吹毛求疵，毕竟也不是唯一的方案。
 
+源码地址：[https://github.com/Liubsyy/JarEditor](https://github.com/Liubsyy/JarEditor)
+
+欢迎交流！
 
