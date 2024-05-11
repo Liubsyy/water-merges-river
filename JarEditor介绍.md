@@ -29,7 +29,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 - 编译java的时候依赖的classpath就是工程项目的依赖，如果依赖包找不到可以添加依赖
 - Save/Compile会将修改的文件保存到jar包所在目录的jar_edit子目录下，Build Jar会把会jar_edit目录的文件增量写入jar，最后再删除这个目录
   
-## 总结
+## 后记
 此插件JarEditor第一版也是我简单的花了一两个晚上做的，以备需要的时候使用，感兴趣的朋友可以去试试，不感兴趣的朋友也别吹毛求疵，毕竟也不是唯一的方案。
 
 源码地址：[https://github.com/Liubsyy/JarEditor](https://github.com/Liubsyy/JarEditor)
