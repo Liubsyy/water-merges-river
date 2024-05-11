@@ -34,5 +34,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 源码地址：[https://github.com/Liubsyy/JarEditor](https://github.com/Liubsyy/JarEditor)
 
+依赖IDEA最低版本为IDEA2020.3，大于等于这个版本均可安装使用。
+
 欢迎交流！
 
