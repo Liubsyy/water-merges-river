@@ -16,7 +16,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 这样编辑一个Jar包内class文件一气呵成无需解压也无需去敲命令。
 
-下面是一个完整的演示流程例子：
+下面是一个流程演示例子：
 
 <img src="./img/JarEditor_example.gif" width="800" height="480" />
 
