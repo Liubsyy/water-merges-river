@@ -28,7 +28,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 <br>
 
-## 一些机制
+### 一些机制
 - 编译依赖的JDK是项目工程的JDK，可以选择编译的class目标版本，默认和jar包的class版本保持一致
 - 编译java的时候依赖的classpath就是工程项目的依赖，如果依赖包找不到可以添加依赖
 - Save/Compile会将修改的文件保存到jar包所在目录的jar_edit子目录下，Build Jar会把会jar_edit目录的文件增量写入jar，最后再删除这个目录
