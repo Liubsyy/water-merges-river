@@ -10,7 +10,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 ### 使用介绍
 在插件市场安装插件JarEditor后，可以在.class反编译文件中看到一个切换到Jar Editor的tab页
 
-<img src="./img/JarEditor_main.png" width="680" height="440" />
+<img src="./img/JarEditor_show.png" width="800" height="521" />
 
 点击Jar Editor后可以直接对反编译的代码进行修改，修改完之后点击Save/Compile会编译当前修改的java内容并保存，然后点击Build Jar即可将编译保存的class文件写入到Jar包内。
 
