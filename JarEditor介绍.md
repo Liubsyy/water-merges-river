@@ -28,7 +28,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 在jar包的工程展示图，任意文件右键，可以看到JarEditor的New和Delete操作，可以新增文件和删除文件
 
-<img src="./img/JarEditor_new_delete.png" width="480" height="476" />
+<img src="./img/JarEditor_new_delete.png" width="550" height="515" />
 
 <br>
 
