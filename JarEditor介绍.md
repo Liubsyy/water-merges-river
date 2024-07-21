@@ -26,7 +26,7 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 修改jar包内的资源文件也是支持的，流程和class文件是一样的，也是修改完要保存，然后再Build Jar即可。
 
-在jar包的工程展示图，任意文件右键，可以看到JarEditor的New和Delete操作，可以新增文件和删除文件
+在jar包的工程展示图，任意文件右键，可以看到JarEditor的New/Delete操作，可以在jar内新增/删除/重命名/复制/粘贴文件。
 
 <img src="./img/JarEditor_new_delete.png" width="550" height="515" />
 
