@@ -30,7 +30,10 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 <img src="./img/JarEditor_new_delete.png" width="550" height="515" />
 
-<br>
+可搜索jar内文件
+
+<img src="./img/JarEditor_search.png" width="550" height="417" />
+
 
 ### 一些机制
 - 编译依赖的JDK是项目工程的JDK，可以选择编译的class目标版本，默认和jar包的class版本保持一致
