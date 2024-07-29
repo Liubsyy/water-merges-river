@@ -52,7 +52,7 @@ function fetch_stargazers {
     while true
     do
         data=$(curl -s -H "Accept: application/vnd.github.v3.star+json" \
-        -H "Authorization: $token" \
+        -H "Authorization: token $token" \
         "https://api.github.com/repos/$stat_repository/stargazers?per_page=$per_page&page=$page")
 
         if [ ${#data} -lt 10 ]; then
@@ -61,7 +61,7 @@ function fetch_stargazers {
 
         starred_at=$(echo "$data" | grep -o '"starred_at": "[^"]*"' | awk -F'"' '{print $4}')
 
-        # UTF +8h
+        # UTC +8h
         for timestamp in $starred_at
         do
             #linux
@@ -77,7 +77,7 @@ function fetch_stargazers {
 }
 
 try_data=$(curl -s -H "Accept: application/vnd.github.v3.star+json" \
-        -H "Authorization: $token" \
+        -H "Authorization: token $token" \
         "https://api.github.com/repos/$stat_repository/stargazers?per_page=1&page=1")
 if echo "$try_data" | grep -q "API rate limit"; then
     echo "$try_data"
