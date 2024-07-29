@@ -53,6 +53,6 @@ if echo "$try_data" | grep -q "API rate limit"; then
     echo "$try_data"
     exit 1
 fi
-echo "date   stars   sum(stars)"
-fetch_stargazers | sort | uniq -c | awk 'BEGIN{sum=0} {sum+=$1; print $2, $1, sum}'
+echo "date          stars    sum(stars)"
+fetch_stargazers | sort | uniq -c | awk 'BEGIN{sum=0} {sum+=$1; print $2 "\t" $1 "\t" sum}'
 
