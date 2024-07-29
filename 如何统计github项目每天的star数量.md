@@ -84,6 +84,13 @@ function fetch_stargazers {
     done
 }
 
+try_data=$(curl -s -H "Accept: application/vnd.github.v3.star+json" \
+        -H "Authorization: $token" \
+        "https://api.github.com/repos/$stat_repository/stargazers?per_page=1&page=1")
+if echo "$try_data" | grep -q "API rate limit"; then
+    echo "$try_data"
+    exit 1
+fi
 echo "date   stars"
 fetch_stargazers | sort | uniq -c | awk '{print $2 , $1}'
 ```
