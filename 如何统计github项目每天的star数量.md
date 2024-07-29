@@ -42,7 +42,6 @@ curl -s -H "Accept: application/vnd.github.v3.star+json" \
 #repository
 stat_repository="Liubsyy/FindInstancesOfClass"
 token=""
-#token="ghp_QGosy2asdasdasdasdasdasdasdasda"
 
 function fetch_stargazers {
     local page=1
@@ -52,7 +51,7 @@ function fetch_stargazers {
     while true
     do
         data=$(curl -s -H "Accept: application/vnd.github.v3.star+json" \
-        -H "Authorization: token $token" \
+        -H "Authorization: ${token:+token $token}" \
         "https://api.github.com/repos/$stat_repository/stargazers?per_page=$per_page&page=$page")
 
         if [ ${#data} -lt 10 ]; then
@@ -77,7 +76,7 @@ function fetch_stargazers {
 }
 
 try_data=$(curl -s -H "Accept: application/vnd.github.v3.star+json" \
-        -H "Authorization: token $token" \
+        -H "Authorization: ${token:+token $token}" \
         "https://api.github.com/repos/$stat_repository/stargazers?per_page=1&page=1")
 if echo "$try_data" | grep -q "API rate limit"; then
     echo "$try_data"
