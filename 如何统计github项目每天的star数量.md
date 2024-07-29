@@ -2,11 +2,11 @@
 
 ## 背景
 
-我们写的github开源项目可以看到star数量和通知，但是没有统计每天的star的数据，有时我们想看看某天一共有多少个star，于是我写了个脚本统计每天的star数量。
+github开源项目可以看到star总数，但是看不到每个star的时间，也没有统计每天的star的数据，有时我们想看看某天一共有多少个star，于是我写了个脚本统计每天的star数量。
 
 ## 实现
 
-github项目的每个star的时间可以通过github的API https://api.github.com/repos/${author}/${repository}/stargazers 获取每个star的时间，下面是一个简单的例子：
+github项目的每个star的时间可以通过github的API `https://api.github.com/repos/${author}/${repository}/stargazers` 获取每个star的时间，下面是一个简单的例子：
 
 ```shell
 curl -s -H "Accept: application/vnd.github.v3.star+json" \
@@ -15,35 +15,27 @@ curl -s -H "Accept: application/vnd.github.v3.star+json" \
 
 
 可获得以下结果：
-```
+```json
 [
   {
     "starred_at": "2023-10-25T01:51:45Z",
-    "user": {
-      ...
-    }
+    "user": {}
   },
   {
     "starred_at": "2023-12-03T09:04:53Z",
-    "user": {
-      ...
-    }
+    "user": {}
   },
   {
     "starred_at": "2023-12-18T06:52:31Z",
-    "user": {
-      ...
-    }
+    "user": {}
   }
 ]
 ```
 
 其中**starred_at**就是star的UTC时间，这个时间再加上8个小时的时区差，就是北京时间，然后按天进行统计即可。
 
-<br>
 
 以下是具体的脚本：
-
 ```shell
 #!/bin/bash
 
@@ -95,9 +87,8 @@ echo "date   stars"
 fetch_stargazers | sort | uniq -c | awk '{print $2 , $1}'
 ```
 
-<br>
-执行脚本可得到每天统计的结果：
 
+执行脚本可得到每天统计的结果：
 ```
 date   stars
 2023-10-25 1
