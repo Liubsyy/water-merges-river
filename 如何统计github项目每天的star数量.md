@@ -2,7 +2,7 @@
 
 ## 背景
 
-我们写的github开源项目可以看到star数量和通知，但是没有统计每天的star的数据，有时我们想看看某天一共有多少个star，于是我让写了个脚本统计每天的star数量。
+我们写的github开源项目可以看到star数量和通知，但是没有统计每天的star的数据，有时我们想看看某天一共有多少个star，于是我写了个脚本统计每天的star数量。
 
 ## 实现
 
@@ -13,9 +13,9 @@ curl -s -H "Accept: application/vnd.github.v3.star+json" \
         "https://api.github.com/repos/Liubsyy/FindInstancesOfClass/stargazers?per_page=3&page=1"
 ```
 
-可获得以下结果，starred_at就是star的UTC时间，这个时间再加上8个小时的时区差，就是北京时间。
+可获得以下结果，**starred_at**就是star的UTC时间，这个时间再加上8个小时的时区差，就是北京时间。
 
-`
+```
 [
   {
     "starred_at": "2023-10-25T01:51:45Z",
@@ -36,7 +36,7 @@ curl -s -H "Accept: application/vnd.github.v3.star+json" \
     }
   }
 ]
-`
+```
 
 然后按天进行统计即可，以下是具体的脚本：
 
@@ -65,7 +65,7 @@ function fetch_stargazers {
 
         starred_at=$(echo "$data" | grep -o '"starred_at": "[^"]*"' | awk -F'"' '{print $4}')
 
-        # utc+8h
+        # UTF +8h
         for timestamp in $starred_at
         do
             #linux
@@ -86,7 +86,7 @@ fetch_stargazers | sort | uniq -c | awk '{print $2 , $1}'
 
 执行脚本可得到每天统计的结果：
 
-`
+```
 date   stars
 2023-10-25 1
 2023-12-03 1
@@ -107,10 +107,10 @@ date   stars
 2024-07-09 1
 2024-07-12 1
 2024-07-26 1
-`
+```
 
 这个API访问频率有限制，最好是带上token进行访问统计，另外linux和mac的date命令有差异，linux系统new_time这里可去掉注释用linux的命令。
 
-本脚本只提供一种思路，用任何编程语言和脚本都可以实现star量的统计。
+本脚本只提供一种思路，根据本思路用任何编程语言和脚本都可以实现star量的统计。
 
 
