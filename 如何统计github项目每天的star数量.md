@@ -13,8 +13,8 @@ curl -s -H "Accept: application/vnd.github.v3.star+json" \
         "https://api.github.com/repos/Liubsyy/FindInstancesOfClass/stargazers?per_page=3&page=1"
 ```
 
-可获得以下结果，**starred_at**就是star的UTC时间，这个时间再加上8个小时的时区差，就是北京时间。
 
+可获得以下结果：
 ```
 [
   {
@@ -38,7 +38,11 @@ curl -s -H "Accept: application/vnd.github.v3.star+json" \
 ]
 ```
 
-然后按天进行统计即可，以下是具体的脚本：
+其中**starred_at**就是star的UTC时间，这个时间再加上8个小时的时区差，就是北京时间，然后按天进行统计即可。
+
+<br>
+
+以下是具体的脚本：
 
 ```shell
 #!/bin/bash
@@ -84,6 +88,7 @@ echo "date   stars"
 fetch_stargazers | sort | uniq -c | awk '{print $2 , $1}'
 ```
 
+<br>
 执行脚本可得到每天统计的结果：
 
 ```
