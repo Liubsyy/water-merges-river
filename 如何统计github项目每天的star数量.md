@@ -6,7 +6,7 @@
 
 ## 实现
 
-github下面的每个star的时间可以通过github的API https://api.github.com/repos/${author}/${repository}/stargazers 获取每个star的时间，下面是一个简单的例子：
+github项目的每个star的时间可以通过github的API https://api.github.com/repos/${author}/${repository}/stargazers 获取每个star的时间，下面是一个简单的例子：
 
 ```shell
 curl -s -H "Accept: application/vnd.github.v3.star+json" \
