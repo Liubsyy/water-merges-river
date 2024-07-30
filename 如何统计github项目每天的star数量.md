@@ -60,6 +60,10 @@ function fetch_stargazers {
 
         starred_at=$(echo "$data" | grep -o '"starred_at": "[^"]*"' | awk -F'"' '{print $4}')
 
+        if [ ${#starred_at} -lt 10 ]; then
+            break
+        fi
+
         # UTC +8h
         for timestamp in $starred_at
         do
@@ -76,12 +80,18 @@ function fetch_stargazers {
 }
 
 try_data=$(curl -s -H "Accept: application/vnd.github.v3.star+json" \
-        -H "Authorization: ${token:+token $token}" \
-        "https://api.github.com/repos/$stat_repository/stargazers?per_page=1&page=1")
+-H "Authorization: ${token:+token $token}" \
+"https://api.github.com/repos/$stat_repository/stargazers?per_page=1&page=1")
 if echo "$try_data" | grep -q "API rate limit"; then
     echo "$try_data"
     exit 1
 fi
+
+if echo "$try_data" | grep -q "Not Found"; then
+    echo "$try_data"
+    exit 1
+fi
+
 echo "date   stars"
 fetch_stargazers | sort | uniq -c | awk '{print $2 , $1}'
 ```
