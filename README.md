@@ -11,5 +11,6 @@
 ## 脚本
 
 - [count_lines.sh](./shes/count_lines.sh): 统计代码行数
-- [github_stars_stat.sh](./shes/github_stars_stat.sh): 统计github每天的star数量，使用方式: `sh gihub_stars_stat.sh username/repository`
-- [github_projects.sh](./shes/github_projects.sh): 列出用户所有github项目的star和fork数量，使用方式: `sh github_projects.sh username`
+- [github_stars_stat.sh](./shes/github_stars_stat.sh): github项目star数量按天统计，使用方式: `sh gihub_stars_stat.sh username/repository`
+- [github_projects.sh](./shes/github_projects.sh): github项目star和fork数量列表，使用方式: `sh github_projects.sh username`
+- [github_stars_notify.sh](./shes/github_stars_notify.sh): github项目star和fork新增提醒（仅mac），使用方式: `sh github_stars_notify.sh username`
