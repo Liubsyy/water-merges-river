@@ -12,5 +12,5 @@
 
 - [count_lines.sh](./shes/count_lines.sh): 统计代码行数
 - [github_stars_stat.sh](./shes/github_stars_stat.sh): github项目star数量按天统计
-- [github_stars_notify.sh](./shes/github_stars_notify.sh): github项目star和fork新增提醒（仅mac）
-- [github_projects.sh](./shes/github_projects.sh): github项目star和fork数量列表
+- [github_stars_notify.sh](./shes/github_stars_notify.sh): 用户所有github项目star和fork新增提醒（仅mac）
+- [github_projects.sh](./shes/github_projects.sh): 用户所有github项目star和fork数量列表
