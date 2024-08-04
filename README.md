@@ -17,4 +17,4 @@
 - [github_projects.sh](./shes/github_projects.sh): 用户所有github项目star和fork数量列表
 
 ## 工具
-- [gtihub点赞通知器](https://github.com/Liubsyy/github_star_notifier/releases/tag/star_notify_v1) : star和fork变化时会有系统通知
+- [gtihub点赞通知器](https://github.com/Liubsyy/github_star_notifier/releases) : star和fork变化时会有系统通知
