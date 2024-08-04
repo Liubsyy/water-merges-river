@@ -1,4 +1,4 @@
-# 滴水穿石
+# 水滴石穿项目
 一些技术文档和一些工具脚本总结
 
 ## 文章
@@ -15,3 +15,6 @@
 - [github_stars_stat.sh](./shes/github_stars_stat.sh): github项目star数量按天统计
 - [github_stars_notify.sh](./shes/github_stars_notify.sh): 用户所有github项目star和fork新增提醒（仅mac）
 - [github_projects.sh](./shes/github_projects.sh): 用户所有github项目star和fork数量列表
+
+## 工具
+- [gtihub点赞通知器](https://github.com/Liubsyy/github_star_notifier/releases/tag/star_notify_v1) : star和fork变化时会有系统通知
