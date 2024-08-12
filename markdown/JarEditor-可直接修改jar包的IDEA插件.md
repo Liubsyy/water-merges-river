@@ -10,11 +10,11 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 ### 使用介绍
 首先在插件市场安装插件JarEditor
 
-<img src="./img/JarEditor_install.png" width="800" height="606" />
+<img src="../img/JarEditor_install.png" width="800" height="606" />
 
 然后可以在.class反编译文件中看到一个切换到Jar Editor的tab页
 
-<img src="./img/JarEditor_main.png" width="800" height="506" />
+<img src="../img/JarEditor_main.png" width="800" height="506" />
 
 点击Jar Editor后可以直接对反编译的代码进行修改，修改完之后点击Save/Compile会编译当前修改的java内容并保存，然后点击Build Jar即可将编译保存的class文件写入到Jar包内。
 
@@ -22,17 +22,17 @@ IDEA自带的反编译插件能打开jar反编译class，遗憾的是不能编�
 
 下面是一个流程演示例子：
 
-<img src="./img/JarEditor_demo.gif" width="800" height="480" />
+<img src="../img/JarEditor_demo.gif" width="800" height="480" />
 
 修改jar包内的资源文件也是支持的，流程和class文件是一样的，也是修改完要保存，然后再Build Jar即可。
 
 在jar包的工程展示图，任意文件右键，可以看到JarEditor的New/Delete操作，可以在jar内新增/删除/重命名/复制/粘贴文件。
 
-<img src="./img/JarEditor_new_delete.png" width="550" height="515" />
+<img src="../img/JarEditor_new_delete.png" width="550" height="515" />
 
 可搜索jar内文件
 
-<img src="./img/JarEditor_search.png" width="550" height="417" />
+<img src="../img/JarEditor_search.png" width="550" height="417" />
 
 
 ### 一些机制
