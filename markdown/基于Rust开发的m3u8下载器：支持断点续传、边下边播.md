@@ -10,7 +10,7 @@
 
 `M3U8 Quicker` 基于 `Tauri + Rust + React + TypeScript` 构建，支持 Windows、macOS 和 Linux。无论是日常保存课程视频、整理网络媒体资源，还是处理需要额外请求头的流媒体地址，它都能提供更直接、更稳定的使用体验。
 
-![下载主界面](./img/m3u8quicker/download_main.png)
+![下载主界面](../img/m3u8quicker/download_main.png)
 
 ## 特性
 
@@ -30,16 +30,16 @@
 
 使用 `M3U8 Quicker` 的过程非常直接。打开应用后，点击“新建下载”，输入 `M3U8` 地址即可创建任务。如果资源依赖 `referer`、`origin` 等附加请求头，也可以在创建任务时一并补充。
 
-![新建下载](./img/m3u8quicker/newtask.png)
+![新建下载](../img/m3u8quicker/newtask.png)
 
 任务开始后，下载列表会持续展示当前状态、下载进度和下载速度。你可以随时暂停任务、恢复任务、重试失败分片。
 
-![下载中](./img/m3u8quicker/download_ts.png)
+![下载中](../img/m3u8quicker/download_ts.png)
 
 
 也可以在下载过程中直接打开播放器，边下载边观看，播放过程中跳转任务进度，系统会优先下载当前播放进度附近的分片
 
-![播放窗口](./img/m3u8quicker/playvideo.png)
+![播放窗口](../img/m3u8quicker/playvideo.png)
 
 
 ## Chrome 扩展
@@ -48,7 +48,7 @@
 
 安装后，扩展会在网页中扫描 `.m3u8` 链接和视频地址，右上角提供快捷入口，点击自动新建下载任务，自动带入常见请求信息，例如 `url`、`referer`、`origin` 和 `user-agent`，可以减少手动复制和整理参数的步骤。
 
-![Chrome 扩展安装引导](./img/m3u8quicker/chrome-extension.png)
+![Chrome 扩展安装引导](../img/m3u8quicker/chrome-extension.png)
 
 
 ## 技术栈

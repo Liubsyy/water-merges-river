@@ -10,7 +10,7 @@
 
 之前我做过一款 IDEA 插件，也叫 `JarEditor`。这次是把这套能力带到了 VS Code 里，希望让“查看、编辑、回写 JAR”这件事更简单一点。
 
-![JarEditor demo](./img/jareditor-vscode/JarEditor_demo.gif)
+![JarEditor demo](../img/jareditor-vscode/JarEditor_demo.gif)
 
 ## 它能做什么
 
@@ -29,7 +29,7 @@
 
 也就是说，以前那种“解压 -> 修改 -> 再打包”的流程，现在很多时候可以直接在编辑器里做完。
 
-<img src="./img/jareditor-vscode/JarEditor_main.png" width="800" height="472" alt="JarEditor main view" />
+<img src="../img/jareditor-vscode/JarEditor_main.png" width="800" height="472" alt="JarEditor main view" />
 
 ## 适合什么时候用
 
@@ -43,7 +43,7 @@
 
 如果你平时经常和 Java 产物打交道，这种方式会省掉不少折腾。
 
-<img src="./img/jareditor-vscode/JarEditor_add_delete.png" width="500" height="431" alt="JarEditor add and delete actions" />
+<img src="../img/jareditor-vscode/JarEditor_add_delete.png" width="500" height="431" alt="JarEditor add and delete actions" />
 
 ## 怎么安装
 
