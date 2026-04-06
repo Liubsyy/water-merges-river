@@ -8,6 +8,8 @@
 - [ShadowRPC: 基于Netty开发轻量级RPC框架](markdown/基于Netty开发轻量级RPC框架.md)
 - [如何统计github项目每天的star数量](markdown/如何统计github项目每天的star数量.md)
 - [深入理解SpringBoot加载FatJar原理](markdown/深入理解SpringBoot加载FatJar原理.md)
+- [在VSCode中直接修改JAR，我复刻了JarEditor](markdown/在%20VS%20Code%20里直接改%20JAR，我复刻了JarEditor.md)
+- [基于Rust开发的m3u8下载器：支持断点续传、边下边播](markdown/基于Rust开发的m3u8下载器：支持断点续传、边下边播.md)
 
 ## 脚本
 - [count_lines.sh](./shes/count_lines.sh): 统计代码行数
