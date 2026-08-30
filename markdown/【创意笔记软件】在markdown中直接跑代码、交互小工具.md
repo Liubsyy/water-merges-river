@@ -17,7 +17,7 @@
 
 > 支持 Python、JavaScript/Node、Ruby、Perl、Bash、PowerShell以及自定义执行器
 
-![](<../assets/images/run_code.png>)
+<img src="../assets/images/run_code.png" width="90%">
 
 
 
@@ -30,11 +30,11 @@
 以下是两个例子
 
 
-![](<../assets/images/image.png>)
+<img src="../assets/images/image.png" width="90%">
 
 
 
-![](<../assets/images/image2.png>)
+<img src="../assets/images/image2.png" width="90%">
 
 
 
@@ -42,7 +42,7 @@
 这个可交互组件的语法是不是有学习成本呢？本软件直接集成了AI笔记助手，一句话创建小工具，会说活就能直接做小工具，零学习成本。
 
 
-![](<../assets/images/ai-img.png>)
+<img src="../assets/images/ai-img.png" width="90%">
 
 
 
@@ -59,4 +59,6 @@
 
 **那么在哪里下载使用呢？**
 
-本项目是免费开源项目：[https://github.com/Liubsyy/idea-note](https://github.com/Liubsyy/idea-note)，欢迎使用和交流！
+本项目是免费开源项目：[https://github.com/Liubsyy/idea-note](https://github.com/Liubsyy/idea-note)
+
+欢迎使用和交流！
