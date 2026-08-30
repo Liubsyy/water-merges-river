@@ -34,7 +34,7 @@
 
 
 
-![](<../assets/images/image 3.png>)
+![](<../assets/images/image2.png>)
 
 
 
@@ -42,7 +42,7 @@
 这个可交互组件的语法是不是有学习成本呢？本软件直接集成了AI笔记助手，一句话创建小工具，会说活就能直接做小工具，零学习成本。
 
 
-![](<../assets/images/image 2.png>)
+![](<../assets/images/ai-img.png>)
 
 
 
