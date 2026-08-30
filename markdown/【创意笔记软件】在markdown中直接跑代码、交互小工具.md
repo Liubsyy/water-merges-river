@@ -57,4 +57,6 @@
 本笔记基于markdown语法，支持git多端同步，后续会持续增加创意的功能，把笔记打造成潘多拉魔盒。
 
 
-那么在哪里下载使用呢？本项目是免费开源项目：[https://github.com/Liubsyy/idea-note](https://github.com/Liubsyy/idea-note)，欢迎使用和交流！
+**那么在哪里下载使用呢？**
+
+本项目是免费开源项目：[https://github.com/Liubsyy/idea-note](https://github.com/Liubsyy/idea-note)，欢迎使用和交流！
